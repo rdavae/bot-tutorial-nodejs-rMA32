@@ -7,12 +7,14 @@ function respond() {
   var request = JSON.parse(this.req.chunks[0]),
       botRegexSalt = /^\/salt/;
       botRegexDB = /^\/dog butt/;
+      botRegexDM = /^\/fun fact/;
+      botRegexWG = /^\/what a guy/;
+      botRegexO = /^\/orgy/;
+      botRegexyub = /^\/y u b/;
+      
       siege1 = 'https://i.groupme.com/350x419.png.adc8c73a6c1547e0a9e04320296329f8'; siege2 = 'https://i.groupme.com/1279x752.jpeg.aa5d0401e0df495bba4b4e09dc5a6bd7'
       siege3 = 'https://i.groupme.com/960x960.png.006e180e05d841c6a2962e844bf1e6fd';
-  var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
-                ,"BAL","SD","DEN","MIN","ATL","KC","NYG","GB","DET","HOU","STL","CHI","CAR",
-                "MIA","BUF","SF","WAS","NYJ","TB"]
-  
+
    if(request.text && botRegexSalt.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://i.imgur.com/B5BSVqH.png");
@@ -23,8 +25,28 @@ function respond() {
     postMessage("http://i.imgur.com/fJv4zO0.gif");
     this.res.end();
   } 
+   else if(request.text && botRegexO.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://i.imgur.com/JQn5ahz.jpg");
+    this.res.end();
+  } 
+   else if(request.text && botRegexyub.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://i.imgur.com/mwrurZc.jpg");
+    this.res.end();
+  } 
+   else if(request.text && botRegexDM.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://i.imgur.com/BiQVX6N.jpg");
+    this.res.end();
+  } 
+   else if(request.text && botRegexWG.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("W H A T A G U Y\r\nH  H\r\nA     A\r\nT         T\r\nA           A\r\nG             G\r\nU                 U\r\nY                     Y");
+    this.res.end();
+  } 
   
-  
+ 
   else {
     console.log("don't care");
     this.res.writeHead(200);
