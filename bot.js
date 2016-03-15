@@ -30,7 +30,6 @@ function respond() {
   } 
     else if(request.text && botRegexdebug.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("sup");
     postMessage(request);
     this.res.end();
   } 
