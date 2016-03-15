@@ -17,7 +17,7 @@ function respond() {
       
       siege1 = 'https://i.groupme.com/350x419.png.adc8c73a6c1547e0a9e04320296329f8'; siege2 = 'https://i.groupme.com/1279x752.jpeg.aa5d0401e0df495bba4b4e09dc5a6bd7'
       siege3 = 'https://i.groupme.com/960x960.png.006e180e05d841c6a2962e844bf1e6fd';
-
+var r2 = JSON.parse(this.req.chunks[1]);
    if(request.text && botRegexSalt.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://i.imgur.com/B5BSVqH.png");
@@ -30,7 +30,7 @@ function respond() {
   } 
     else if(request.text && botRegexdebug.test(request.text)) {
     this.res.writeHead(200);
-    postMessage(request.text);
+    postMessage(r2.text);
     this.res.end();
   } 
    else if(request.text && botRegexhelp.test(request.text)) {
