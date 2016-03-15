@@ -6,6 +6,7 @@ var botID = process.env.BOT_ID;
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
       botRegexSalt = /^\/salt/;
+      botRegexdebug = /^\/db/;
       botRegexDB = /^\/dog butt/;
       botRegexDM = /^\/fun fact/;
       botRegexWG = /^\/what a guy/;
@@ -25,6 +26,11 @@ function respond() {
    else if(request.text && botRegexDB.test(request.text)) {
     this.res.writeHead(200);
     postMessage("http://i.imgur.com/fJv4zO0.gif");
+    this.res.end();
+  } 
+    else if(request.text && botRegexdebug.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage(request);
     this.res.end();
   } 
    else if(request.text && botRegexhelp.test(request.text)) {
