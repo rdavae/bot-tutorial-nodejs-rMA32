@@ -14,6 +14,10 @@ function respond() {
       botRegexyub = /^\/y u b/;
       botRegexj = /^\/joaje/;
       botRegexhelp = /^\/help/;
+      botRegexbw = /^\/but wait/;
+      botRegexla = /^\/liz approves/;
+      botRegexbb = /^\/be better/;
+      botRegextk = /^\/thug/;
       
       siege1 = 'https://i.groupme.com/350x419.png.adc8c73a6c1547e0a9e04320296329f8'; siege2 = 'https://i.groupme.com/1279x752.jpeg.aa5d0401e0df495bba4b4e09dc5a6bd7'
       siege3 = 'https://i.groupme.com/960x960.png.006e180e05d841c6a2962e844bf1e6fd';
@@ -32,10 +36,35 @@ function respond() {
     this.res.writeHead(200);
     postMessage(request.nickname);
     this.res.end();
+    
+  } 
+   else if(request.text && botRegexbb.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://i.imgur.com/47cGgAH.png");
+    this.res.end();
+    
+  } 
+   else if(request.text && botRegextk.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://i.imgur.com/Iy4xgBF.jpg");
+    this.res.end();
+    
+  } 
+   else if(request.text && botRegexla.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://i.imgur.com/XtliRDG.png");
+    this.res.end();
+    
+  } 
+   else if(request.text && botRegexbw.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://i.imgur.com/VkTNCWG.png");
+    this.res.end();
+    
   } 
    else if(request.text && botRegexhelp.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("here\'s all the commands this stupid meme bot can do:\r\n\/salt\/\r\n\/dog butt\/\r\n\/fun fact\/\r\n\/what a guy\/\r\n\/orgy\/\r\n\/y u b\/\r\n\/joaje\/\r\n\r\nall of these commands are case sensitive!\r\nstay safe, make good decisions, don\'t do drugs, and don\'t go to class!\r\n<3 raj\r\n      \r\n\r\n");
+    postMessage("i\'m fucking done with this shit. \r\n\/salt\/\r\n\/dog butt\/\r\n\/thug\/\r\n\/be better\/\r\n\/liz approves\/\r\n\/but wait\/\r\n/fun fact\/\r\n\/what a guy\/\r\n\/orgy\/\r\n\/y u b\/\r\n\/joaje\/\r\n\r\nall of these commands are case sensitive!\r\nstay safe, make good decisions, don\'t do drugs, and don\'t go to class!\r\n<3 raj\r\n      \r\n\r\n");
     this.res.end();
   } 
    else if(request.text && botRegexj.test(request.text)) {
