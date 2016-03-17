@@ -19,7 +19,7 @@ function respond() {
       botRegexbb = /^\/be better/;
       botRegextk = /^\/thug/;
       botRegexha = /^\/haigb/;
-      botRegexns = /raj|Raj|@raj|@Raj/;
+      botRegexns = /^\/ives/;
       botRegextank = /\btank\b/i;
       botRegexass = /\bass\b/i;
       siege1 = 'https://i.groupme.com/350x419.png.adc8c73a6c1547e0a9e04320296329f8'; siege2 = 'https://i.groupme.com/1279x752.jpeg.aa5d0401e0df495bba4b4e09dc5a6bd7'
@@ -90,7 +90,7 @@ function respond() {
   } 
     else if(request.text && botRegexns.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("What the fuck did you just fucking say about me, you little bitch? I\u2019ll have you know I graduated top of my class in the Navy Seals, and I\u2019ve been involved in numerous secret raids on Al-Quaeda, and I have over 300 confirmed kills. I am trained in gorilla warfare and I\u2019m the top sniper in the entire US armed forces. You are nothing to me but just another target.");
+    postmessage("At 730 in Ives 105 the legal director of the International Trade Union Confederation will be speaking. He's a super cool and smart guy, his talk should be really interesting, and likely a good bit about CORNELL IN QATAR So come on out! Remember this is our university!");
     this.res.end();
     
   } 
