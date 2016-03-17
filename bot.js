@@ -51,8 +51,9 @@ function respond() {
      this.res.writeHead(200);
     var pos = request.text.search(/\bass\b/i);
     if(request.text.length > 3){
-      
-var memes = request.text.substring(pos + 4, str.length);
+    
+var memes = request.text.substring(pos + 3, str.length);
+memes = memes.trim();
 var p2 = memes.search(/ /);
 var m2 = memes.substring(0, p2);
     
