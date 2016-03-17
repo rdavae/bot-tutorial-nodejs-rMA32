@@ -74,7 +74,12 @@ function respond() {
   } 
    else if(request.text && botRegexO.test(request.text)) {
     this.res.writeHead(200);
+    if(request.name == "Raj Davae"){
+      postMessage("no");
+    }
+    else{
     postMessage("http://i.imgur.com/JQn5ahz.jpg");
+    }
     this.res.end();
   } 
    else if(request.text && botRegexyub.test(request.text)) {
