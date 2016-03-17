@@ -67,12 +67,13 @@ function respond() {
      
      
     
-    if(request.text.length() > 3){
+   if(request.text.length > 3){
     
     var memes = request.text.substring(pos + 3, request.text.length);
     memes = memes.trim();
-   
-    postMessage("yoo");
+   var p2 = memes.search(/ /);
+    var m2 = memes.substring(0, p2);
+    postMessage("What\'s an ass-"+m2+"?");
     
     
     }
