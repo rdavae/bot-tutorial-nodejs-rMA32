@@ -90,7 +90,7 @@ function respond() {
   } 
     else if(request.text && botRegexns.test(request.text)) {
     this.res.writeHead(200);
-    postmessage("At 730 in Ives 105 the legal director of the International Trade Union Confederation will be speaking. He's a super cool and smart guy, his talk should be really interesting, and likely a good bit about CORNELL IN QATAR So come on out! Remember this is our university!");
+    postMessage("At 730 in Ives 105 the legal director of the International Trade Union Confederation will be speaking. He\'s a super cool and smart guy, his talk should be really interesting, and likely a good bit about CORNELL IN QATAR So come on out! Remember this is our university!");
     this.res.end();
     
   } 
