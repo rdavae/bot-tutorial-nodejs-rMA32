@@ -72,8 +72,14 @@ function respond() {
     var memes = request.text.substring(pos + 3, request.text.length);
     memes = memes.trim();
    var p2 = memes.search(/ /);
+   
+   if(p2 > 0){ //memes has a space
     var m2 = memes.substring(0, p2);
     postMessage("What\'s an ass-"+m2+"?");
+   }
+   else{ //memes is a single word
+     postMessage("What\'s an ass-"+memes+"?");
+   }
     
     
     }
