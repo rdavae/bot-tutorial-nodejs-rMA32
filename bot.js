@@ -46,10 +46,10 @@ function respond() {
     this.res.end();
     
   } 
-  else if(request.text && botRegexass.test(request.text) && request.text.indexOf("What\'s") < 0) {
+  else if(request.text && botRegexass.test(request.text) ) {
    
      this.res.writeHead(200);
-     postMessage("What\'s an ass ?");
+     postMessage("What\'s an  ?");
     var pos = request.text.search(/\bass\b/i);
     if(request.text.length() > 3){
     
