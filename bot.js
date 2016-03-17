@@ -46,7 +46,7 @@ function respond() {
     this.res.end();
     
   } 
-  else if(request.text && botRegexass.test(request.text) && request.sender_id != botID) {
+  else if(request.text && botRegexass.test(request.text) && request.text.indexOf("What\'s") >= 0) {
    
      
     var pos = request.text.search(/\bass\b/i);
