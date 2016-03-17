@@ -72,7 +72,7 @@ function respond() {
     var memes = request.text.substring(pos + 3, request.text.length);
     memes = memes.trim();
    
-    postMessage(memes);
+    postMessage("yoo");
     
     
     }
