@@ -57,7 +57,7 @@ memes = memes.trim();
 var p2 = memes.search(/ /);
 var m2 = memes.substring(0, p2);
     
-    postMessage("What\'s an ass "+m2+"?");
+    postMessage(p2);
     }
     this.res.end();
   } 
