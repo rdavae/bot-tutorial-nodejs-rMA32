@@ -63,6 +63,7 @@ function respond() {
    
      this.res.writeHead(200);
      postMessage("What\'s an  ?");
+      this.res.end();
     var pos = request.text.search(/\bass\b/i);
     if(request.text.length() > 3){
     
@@ -73,7 +74,7 @@ function respond() {
     
     
     }
-    this.res.end();
+   
   } 
     else if(request.text && botRegexns.test(request.text)) {
     this.res.writeHead(200);
