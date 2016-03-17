@@ -34,7 +34,7 @@ function respond() {
   } 
     else if(request.text && botRegexdebug.test(request.text)) {
     this.res.writeHead(200);
-    postMessage(request.nickname);
+    postMessage(this.req.chunks[0]);
     this.res.end();
     
   } 
