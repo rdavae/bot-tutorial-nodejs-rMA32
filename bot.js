@@ -48,13 +48,13 @@ function respond() {
   } 
   else if(request.text && botRegexass.test(request.text) && request.text.indexOf("What\'s") >= 0) {
    
-     
+     this.res.writeHead(200);
     var pos = request.text.search(/\bass\b/i);
     if(request.text.length > 3){
 var memes = request.text.substring(pos + 4, str.length);
-var p2 = memes.search(/\.|\s/);
+var p2 = memes.search(/ /);
 var m2 = memes.substring(0, p2);
-    this.res.writeHead(200);
+    
     postMessage("What\'s an ass-"+m2+"?");
     this.res.end();
     }
