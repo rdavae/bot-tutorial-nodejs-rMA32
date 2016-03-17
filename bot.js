@@ -20,7 +20,8 @@ function respond() {
       botRegextk = /^\/thug/;
       botRegexha = /^\/haigb/;
       botRegexns = /raj|Raj|@raj|@Raj/;
-      botRegextank = /tank/;
+      botRegextank = /\btank\b/i;
+      botRegexass = /\bass\b/i;
       siege1 = 'https://i.groupme.com/350x419.png.adc8c73a6c1547e0a9e04320296329f8'; siege2 = 'https://i.groupme.com/1279x752.jpeg.aa5d0401e0df495bba4b4e09dc5a6bd7'
       siege3 = 'https://i.groupme.com/960x960.png.006e180e05d841c6a2962e844bf1e6fd';
 
@@ -45,6 +46,20 @@ function respond() {
     this.res.end();
     
   } 
+  else if(request.text && botRegexass.test(request.text) && request.sender_id != botID) {
+   
+     
+    var pos = request.text.search(/\bass\b/i);
+    if(request.text.length > 3){
+var memes = request.substring(pos + 4, str.length);
+var p2 = memes.search(/\.|\s/);
+var m2 = memes.substring(0, p2);
+    this.res.writeHead(200);
+    postMessage("What\'s an ass-"+m2+"?");
+    this.res.end();
+    }
+    
+  } 
    else if(request.text && botRegexbb.test(request.text)) {
     this.res.writeHead(200);
     postMessage("http://i.imgur.com/47cGgAH.png");
@@ -59,7 +74,7 @@ function respond() {
   } 
     else if(request.text && botRegexns.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("What the fuck did you just fucking say about me, you little bitch? I\u2019ll have you know I graduated top of my class in the Navy Seals, and I\u2019ve been involved in numerous secret raids on Al-Quaeda, and I have over 300 confirmed kills. I am trained in gorilla warfare and I\u2019m the top sniper in the entire US armed forces. You are nothing to me but just another target. I will wipe you the fuck out with precision the likes of which has never been seen before on this Earth, mark my fucking words. You think you can get away with saying that shit to me over the Internet? Think again, fucker. As we speak I am contacting my secret network of spies across the USA and your IP is being traced right now so you better prepare for the storm, maggot. The storm that wipes out the pathetic little thing you call your life. You\u2019re fucking dead, kid. I can be anywhere, anytime, and I can kill you in over seven hundred ways, and that\u2019s just with my bare hands. Not only am I extensively trained in unarmed combat, but I have access to the entire arsenal of the United States Marine Corps and I will use it to its full extent to wipe your miserable ass off the face of the continent, you little shit. If only you could have known what unholy retribution your little \u201Cclever\u201D comment was about to bring down upon you, maybe you would have held your fucking tongue. But you couldn\u2019t, you didn\u2019t, and now you\u2019re paying the price, you goddamn idiot. I will shit fury all over you and you will drown in it. You\u2019re fucking dead, kiddo.\r\n");
+    postMessage("What the fuck did you just fucking say about me, you little bitch? I\u2019ll have you know I graduated top of my class in the Navy Seals, and I\u2019ve been involved in numerous secret raids on Al-Quaeda, and I have over 300 confirmed kills. I am trained in gorilla warfare and I\u2019m the top sniper in the entire US armed forces. You are nothing to me but just another target.");
     this.res.end();
     
   } 
@@ -117,7 +132,7 @@ function respond() {
   } 
    else if(request.text && botRegexWG.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("W H A T A G U Y\r\nH  H\r\nA     A\r\nT         T\r\nA           A\r\nG             G\r\nU                 U\r\nY                     Y");
+    postMessage("W H A T A G U Y\r\nH  H\r\nA     A\r\nT        T\r\nA          A\r\nG            G\r\nU              U\r\nY                Y");
     this.res.end();
   } 
   
