@@ -46,22 +46,7 @@ function respond() {
     this.res.end();
     
   } 
-  else if(request.text && botRegexass.test(request.text) ) {
-   
-     this.res.writeHead(200);
-     postMessage("What\'s an  ?");
-    var pos = request.text.search(/\bass\b/i);
-    if(request.text.length() > 3){
-    
-var memes = request.text.substring(pos + 3, str.length);
-memes = memes.trim();
-var p2 = memes.search(/ /);
-var m2 = memes.substring(0, p2);
-    
-    
-    }
-    this.res.end();
-  } 
+ 
    else if(request.text && botRegexbb.test(request.text)) {
     this.res.writeHead(200);
     postMessage("http://i.imgur.com/47cGgAH.png");
