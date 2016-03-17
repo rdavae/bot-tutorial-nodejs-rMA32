@@ -51,14 +51,14 @@ function respond() {
      this.res.writeHead(200);
     var pos = request.text.search(/\bass\b/i);
     if(request.text.length > 3){
+      
 var memes = request.text.substring(pos + 4, str.length);
 var p2 = memes.search(/ /);
 var m2 = memes.substring(0, p2);
     
-    postMessage("What\'s an ass-"+m2+"?");
-    this.res.end();
+    postMessage("What\'s an ass "+m2+"?");
     }
-    
+    this.res.end();
   } 
    else if(request.text && botRegexbb.test(request.text)) {
     this.res.writeHead(200);
