@@ -11,6 +11,7 @@ function respond() {
       botRegexDM = /^\/fun fact/;
       botRegexWG = /^\/what a guy/;
       botRegexO = /^\/orgy/;
+botRegexmm = /^\/millerdid310|\/itwasanunderwaterjob/;
       botRegexyub = /^\/y u b/;
       botRegexj = /^\/joaje/;
       botRegexhelp = /^\/help/;
@@ -141,6 +142,16 @@ function respond() {
     
     this.res.end();
   } 
+
+   else if(request.text && botRegexmm.test(request.text)) {
+    this.res.writeHead(200);
+  
+    
+    postMessage("http://i.imgur.com/JQn5ahz.jpg");
+    
+    this.res.end();
+  } 
+
    else if(request.text && botRegexyub.test(request.text)) {
     this.res.writeHead(200);
     postMessage("http://i.imgur.com/mwrurZc.jpg");
