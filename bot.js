@@ -23,6 +23,7 @@ botRegexmm = /^\/millerdid310|\/itwasanunderwaterjob/;
       botRegexns = /^\/ives/;
       botRegextank = /\btank\b/i;
       botRegexass = /\bass\b/i;
+      botRegexinsta = /\binstagram\b|\binsta\b|\big\b/i;
       botRegexweed = /^\/snoop/;
       botRegexweh = /^\/weh/;
       siege1 = 'https://i.groupme.com/350x419.png.adc8c73a6c1547e0a9e04320296329f8'; siege2 = 'https://i.groupme.com/1279x752.jpeg.aa5d0401e0df495bba4b4e09dc5a6bd7'
@@ -123,6 +124,12 @@ botRegexmm = /^\/millerdid310|\/itwasanunderwaterjob/;
    else if(request.text && botRegexla.test(request.text)) {
     this.res.writeHead(200);
     postMessage("http://i.imgur.com/XtliRDG.png");
+    this.res.end();
+    
+  } 
+  else if(request.text && botRegexinsta.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("DAILY REMINDER TO FOLLOW @becca.rodell ON INSTAGRAM");
     this.res.end();
     
   } 
