@@ -127,7 +127,8 @@ botRegexmm = /^\/millerdid310|\/itwasanunderwaterjob/;
     this.res.end();
     
   } 
-  else if(request.text && botRegexinsta.test(request.text)) {
+  else if(request.text && botRegexinsta.test(request.text)&& request.text != "DAILY REMINDER TO FOLLOW @becca.rodell ON INSTAGRAM") {
+    
     this.res.writeHead(200);
     postMessage("DAILY REMINDER TO FOLLOW @becca.rodell ON INSTAGRAM");
     this.res.end();
