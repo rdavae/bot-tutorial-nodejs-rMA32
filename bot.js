@@ -11,6 +11,7 @@ function respond() {
       botRegexDM = /^\/fun fact/;
       botRegexWG = /^\/what a guy/;
       botRegexO = /^\/orgy/;
+      botRegexdat = /^\/dat boi/;
 botRegexmm = /^\/millerdid310|\/itwasanunderwaterjob/;
       botRegexyub = /^\/y u b/;
       botRegexj = /^\/joaje/;
@@ -58,6 +59,12 @@ botRegexmm = /^\/millerdid310|\/itwasanunderwaterjob/;
    else if(request.text && botRegexbb.test(request.text)) {
     this.res.writeHead(200);
     postMessage("http://i.imgur.com/47cGgAH.png");
+    this.res.end();
+    
+  } 
+   else if(request.text && botRegexdat.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://i0.kym-cdn.com/photos/images/original/001/112/710/e7b.gif");
     this.res.end();
     
   } 
