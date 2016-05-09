@@ -21,6 +21,7 @@ botRegexmm = /^\/millerdid310|\/itwasanunderwaterjob/;
       botRegexbb = /^\/be better/;
       botRegextk = /^\/thug/;
       botRegexha = /^\/haigb/;
+      botRegexgoodman = /^\/goodman/;
       botRegexns = /^\/ives/;
       botRegextank = /\btank\b/i;
       botRegexass = /\bass\b/i;
@@ -48,6 +49,12 @@ botRegexmm = /^\/millerdid310|\/itwasanunderwaterjob/;
     else if(request.text && botRegexdebug.test(request.text)) {
     this.res.writeHead(200);
     postMessage(this.req.chunks[0]);
+    this.res.end();
+    
+  } 
+    else if(request.text && botRegexgoodman.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("Goodman. Verb. only seeing the thing most immediately apparent, even when it is assumed, at least by me, to be quite evident that there is more to an issue than that.");
     this.res.end();
     
   } 
