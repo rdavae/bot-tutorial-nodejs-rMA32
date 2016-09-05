@@ -156,7 +156,7 @@ botRegexmm = /^\/millerdid310|\/itwasanunderwaterjob/;
   } 
    else if(request.text && botRegexhelp.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("i fully acknowledge that this bot was a mistake; please support my sanity by NEVER FUCKING USING IT EVER. \r\n\/salt\/\r\n\/dog butt\/\r\n\/thug\/\r\n\/be better\/\r\n\/liz approves\/\r\n\/but wait\/\r\n/fun fact\/\r\n\/what a guy\/\r\n\/y u b\/\r\n\/joaje\/\r\n\r\nall of these commands are case sensitive, but please consider doing something other than spamming us ad-nauseam with these banal, annoying, and ultimately not-dank-at-all memes. might i suggest listening to my bloody valentine\'s landmark shoegaze masterpiece Loveless instead? much better use of your time friendo \r\n\r\n~Ra\"DogButtBot is my disowned son\"j Da\"freshmen I apologize in advance\"vae\r\n      \r\n\r\n");
+    postMessage("i fully acknowledge that this bot was a mistake; please support my sanity by NEVER FUCKING USING IT EVER. \r\n\/salt\/\r\n\/dog butt\/\r\n\/thug\/\r\n\/be better\/\r\n\/liz approves\/\r\n\/but wait\/\r\n/fun fact\/\r\n\/what a guy\/\r\n\/y u b\/\r\n\/joaje\/\r\n\r\nall of these commands are case sensitive, but please consider doing something other than spamming us with these silly memes. might i suggest listening to my bloody valentine\'s landmark shoegaze masterpiece Loveless instead? much, MUCH, better use of your time, friendo \r\n\r\n~Ra\"DogButtBot is my disowned son\"j Da\"freshmen I apologize in advance\"vae\r\n      \r\n\r\n");
     this.res.end();
   } 
    else if(request.text && botRegexj.test(request.text)) {
