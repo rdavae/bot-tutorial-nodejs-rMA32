@@ -28,6 +28,8 @@ botRegexmm = /^\/millerdid310|\/itwasanunderwaterjob/;
       botRegexinsta = /\binstagram\b|\binsta\b|\big\b/i;
       botRegexweed = /^\/snoop/;
       botRegexweh = /^\/weh/;
+      botRegexheathen = /^\/heathen/;
+
       siege1 = 'https://i.groupme.com/350x419.png.adc8c73a6c1547e0a9e04320296329f8'; siege2 = 'https://i.groupme.com/1279x752.jpeg.aa5d0401e0df495bba4b4e09dc5a6bd7'
       siege3 = 'https://i.groupme.com/960x960.png.006e180e05d841c6a2962e844bf1e6fd';
 
@@ -39,7 +41,7 @@ botRegexmm = /^\/millerdid310|\/itwasanunderwaterjob/;
    else if(request.text && botRegexDB.test(request.text)) {
     this.res.writeHead(200);
       if(request.name.indexOf("Rodell") > -1){
-      postMessage("no Becca");
+      postMessage("B E C C");
       }
     else{
     postMessage("http://i.imgur.com/fJv4zO0.gif");
@@ -52,9 +54,11 @@ botRegexmm = /^\/millerdid310|\/itwasanunderwaterjob/;
     this.res.end();
     
   } 
+  
+  
     else if(request.text && botRegexgoodman.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("Goodman. Verb. only seeing the thing most immediately apparent, even when it is assumed, at least by me, to be quite evident that there is more to an issue than that.");
+    postMessage("http://imgur.com/a/NvYPk");
     this.res.end();
     
   } 
@@ -75,6 +79,13 @@ botRegexmm = /^\/millerdid310|\/itwasanunderwaterjob/;
     this.res.end();
     
   } 
+    else if(request.text && botRegexheathen.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://i.imgur.com/bngJ6FP.png");
+    this.res.end();
+    
+  } 
+  
    else if(request.text && botRegexha.test(request.text)) {
     this.res.writeHead(200);
     postMessage("http://i.imgur.com/MphP5TF.png");
