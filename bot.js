@@ -58,7 +58,7 @@ botRegexmm = /^\/millerdid310|\/itwasanunderwaterjob/;
   
     else if(request.text && botRegexgoodman.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://imgur.com/a/NvYPk");
+    postMessage("http://i.imgur.com/Dpt7Fu8h.jpg");
     this.res.end();
     
   } 
